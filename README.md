@@ -1,4 +1,4 @@
-# logat
+# logat [![npm version](https://badge.fury.io/js/logat.svg)](http://badge.fury.io/js/logat)
 a simple nodejs module for logging, provide many feature by default yet its coustomizable.
 
 **Available Features**
@@ -42,6 +42,7 @@ options ={
 ###### Use logger.getOptions() method to get current options value;
 ###### Use logger.setOptions() method to set required options value;
 
+
 **Deatail Usages(example)**
 ```
 'use strict'
@@ -72,5 +73,4 @@ try {
 ```
 
 **Deatail Usages(output of above example)**
-
-[]https://github.com/krvikash35/logger/blob/master/example/logat2.png
+![alt tag](https://github.com/krvikash35/logger/blob/master/example/logat2.png)
