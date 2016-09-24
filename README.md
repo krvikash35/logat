@@ -73,5 +73,4 @@ try {
 ```
 
 **Deatail Usages(output of above example)**
-
-[]https://github.com/krvikash35/logger/blob/master/example/logat2.png
+![alt tag](https://github.com/krvikash35/logger/blob/master/example/logat2.png)
