@@ -1,5 +1,5 @@
 'use strict'
-let logger = require('../lib/logger');
+let logger = require('../lib/logat');
 
 logger.setOptions({
     logLevel: 4

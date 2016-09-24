@@ -1,15 +1,15 @@
 {
-  "name": "logger",
+  "name": "logat",
   "version": "1.0.0",
   "description": "simple logger module for nodejs",
-  "main": "./lib/logger.js",
+  "main": "./lib/logat.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc lib/logger.ts"
+    "build": "tsc lib/logat.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krvikash35/logger.git"
+    "url": "git+https://github.com/krvikash35/logat.git"
   },
   "keywords": [
     "log",
@@ -24,9 +24,9 @@
   "author": "vikash kumar <krvikash35@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krvikash35/logger/issues"
+    "url": "https://github.com/krvikash35/logat/issues"
   },
-  "homepage": "https://github.com/krvikash35/logger#readme",
+  "homepage": "https://github.com/krvikash35/logat#readme",
   "devDependencies": {
     "typescript": "^2.0.2",
     "@types/node": "^6.0.39"
