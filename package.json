@@ -1,0 +1,34 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "simple logger module for nodejs",
+  "main": "./lib/logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc lib/logger.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krvikash35/logger.git"
+  },
+  "keywords": [
+    "log",
+    "file",
+    "console",
+    "lineNumber",
+    "fileName",
+    "error",
+    "config",
+    "color"
+  ],
+  "author": "vikash kumar <krvikash35@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krvikash35/logger/issues"
+  },
+  "homepage": "https://github.com/krvikash35/logger#readme",
+  "devDependencies": {
+    "typescript": "^2.0.2",
+    "@types/node": "^6.0.39"
+  }
+}
