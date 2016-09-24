@@ -8,7 +8,7 @@ a simple nodejs module for logging, provide many feature by default yet its cous
 - You can pass just string or object or any number of argument to log method.
 - All the object passed to log method will be stringify and will be prefix with Object{index}
 - If the object passed to error method is instance of error, then method will automatically print trace of that error, showing where the actuall error happend.
-- Will emit event if any error occured like wrong options or file read error etc, we can attach the event listener after importing the module
+- Will emit event "LogConfigError" if any error occured like wrong options or file read error etc, we can attach the event listener after importing the module
 
 ###### Please Note:
 line number where log was called is different from line number where error object got instantianted. i.e
@@ -25,17 +25,33 @@ npm install logat
 **Basic Usages**
 ```
 let logger = require('logat')
+logger.error('this is error');
+logger.warn('this is warn');
+logger.info('this is info');
+logger.debug('this is debug');
 ```
 
-
+**Available Options with default value**
+```
+options ={
+    logLevel: 1-error(default), 2-warn, 3-info, 4-debug
+    logMethod: 1-Console(default), 2-File
+    logFileName: 'app.log'(default)
+}
+```
+###### Use logger.getOptions() method to get current options value;
+###### Use logger.setOptions() method to set required options value;
 
 **Deatail Usages(example)**
 ```
 'use strict'
 let logger = require('logat');
 
+logger.on('LogConfigError', err => console.log(err) );
+
 logger.setOptions({
-    logLevel: 4
+    logLevel: 4,
+    logMethod: 1
 })
 
 function getAge(age) {
