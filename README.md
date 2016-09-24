@@ -1,4 +1,4 @@
-# logat
+# logat [![npm version](https://badge.fury.io/js/logat.svg)](http://badge.fury.io/js/logat)
 a simple nodejs module for logging, provide many feature by default yet its coustomizable.
 
 **Available Features**
