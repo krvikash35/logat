@@ -42,6 +42,7 @@ options ={
 ###### Use logger.getOptions() method to get current options value;
 ###### Use logger.setOptions() method to set required options value;
 
+
 **Deatail Usages(example)**
 ```
 'use strict'
