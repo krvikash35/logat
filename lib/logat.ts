@@ -100,7 +100,12 @@ function logEvent(evname: string, ...params) {
             if (params[i] instanceof Error) {
                 params[i] = params[i].stack
             } else if (typeof params[i] === 'object') {
-                params[i] = JSON.stringify(params[i], null, 3)
+                try {
+                    params[i] = JSON.stringify(params[i], null, 3)
+                } catch (e) {
+                    params[i] = "logat: problem while stringify input param";
+                }
+
             }
             console.log('Object' + i + ': ', params[i])
         }
@@ -111,7 +116,11 @@ function logEvent(evname: string, ...params) {
             if (params[i] instanceof Error) {
                 params[i] = params[i].stack;
             } else if (typeof params[i] === 'object') {
-                params[i] = JSON.stringify(params[i], null, 3)
+                try {
+                    params[i] = JSON.stringify(params[i], null, 3)
+                } catch (e) {
+                    params[i] = "logat: problem while stringify input param";
+                }
             }
             fs.appendFile(this.options.logFileName, params[i] + '\n' + 'Object' + i + ': ', (err, msg) => {
                 if (err) {
