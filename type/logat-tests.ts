@@ -2,8 +2,7 @@
 
 import logat = require('logat');
 
-logat.on('LogConfigError', function(err){
-
+logat.on('LogConfigError', function(err: any){
 })
 
 logat.error('This is error');
