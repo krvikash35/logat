@@ -1,6 +1,10 @@
 /// <reference path="logat.d.ts" />
 
-import logat = require('logat')
+import logat = require('logat');
+
+logat.on('LogConfigError', function(err){
+
+})
 
 logat.error('This is error');
 logat.error( new Error('This is error instance') );

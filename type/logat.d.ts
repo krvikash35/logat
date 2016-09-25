@@ -4,15 +4,20 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 declare module 'logat'{
+  import events = require('events');
   interface LogOptionsI {
     logLevel?: number,
     logMethod?: number,
     logFileName?: string
-}
-  export function error(...args: any[]): void;
-  export function warn(...args: any[]): void;
-  export function info(...args: any[]): void;
-  export function debug(...args: any[]): void;
-  export function getOptions(): LogOptionsI;
-  export function setOptions(options: LogOptionsI);
+  }
+
+  class Logger extends events.EventEmitter {
+    error(...args: any[]): void;
+    warn(...args: any[]): void;
+    debug(...args: any[]): void;
+    getOptions(): LogOptionsI;
+    setOptions(options: LogOptionsI);
+  }
+
+  export = new Logger();
 }
