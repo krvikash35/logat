@@ -1,1 +1,1 @@
-export * from './lib/logat.d.ts';
+/// <reference path="./type/logat" />
