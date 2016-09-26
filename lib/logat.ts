@@ -83,7 +83,7 @@ class Logger extends EventEmitter {
 }
 
 let options: LogOptionsI = {
-    logLevel: LogLevelE.ERROR,
+    logLevel: LogLevelE.DEBUG,
     logMethod: LogMethodE.CONSOLE,
     logFileName: 'app.log'
 }
