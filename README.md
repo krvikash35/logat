@@ -34,7 +34,7 @@ logger.debug('this is debug');
 **Available Options with default value**
 ```
 options ={
-    logLevel: 1-error(default), 2-warn, 3-info, 4-debug
+    logLevel: 1-error, 2-warn, 3-info, 4-debug(default)
     logMethod: 1-Console(default), 2-File
     logFileName: 'app.log'(default)
 }
